@@ -56,6 +56,9 @@ var generatePassword = function() {
       // adds symbolChar array to choiceArray
       choiceArray = choiceArray.concat(symbolChar);
     }
+    else {
+      return generatePassword();
+    }
   }
 
   // generate password
